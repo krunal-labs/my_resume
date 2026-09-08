@@ -1,0 +1,8 @@
+# Ignore personal source data containing private contact details (phone & email)
+personal_data/
+
+# OS & Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

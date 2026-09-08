@@ -2,26 +2,22 @@
 
 A modern, high-performance personal portfolio and interactive resume website built for **Krunal Panchal**, designed for instant deployment on **GitHub Pages**.
 
-## 🚀 Live Publishing to GitHub Pages (Step-by-Step)
+## 🚀 Live Publishing to GitHub Pages (Automated)
 
-This repository requires **no build step** (pure vanilla HTML5, CSS3, and ES6 JavaScript). To deploy:
+This repository includes an automated **GitHub Actions** workflow ([`.github/workflows/deploy.yml`](file:///.github/workflows/deploy.yml)).
 
-1. **Initialize Git & Push to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial commit of portfolio website"
-   git branch -M main
-   git remote add origin https://github.com/krunal-labs/<your-repo-name>.git
-   git push -u origin main
-   ```
+### 1. Push to GitHub
+Run the following command in your terminal:
+```bash
+git push -u origin main
+```
+*(If prompted by Git Credential Manager, complete the quick browser login.)*
 
-2. **Enable GitHub Pages:**
-   - Go to your repository on GitHub: `https://github.com/krunal-labs/<your-repo-name>`
-   - Click **Settings** &rarr; **Pages** (in the left sidebar).
-   - Under **Build and deployment** &rarr; **Source**, select **Deploy from a branch**.
-   - Under **Branch**, select `main` and `/ (root)`, then click **Save**.
-   - Your website will be live in ~60 seconds at `https://krunal-labs.github.io/<your-repo-name>/`.
+### 2. Enable GitHub Pages
+1. Go to your repository settings on GitHub: [https://github.com/krunal-labs/my_resume/settings/pages](https://github.com/krunal-labs/my_resume/settings/pages)
+2. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions** (or **Deploy from a branch** &rarr; `main` / root).
+3. Your website will be live in ~60 seconds at:
+   👉 **`https://krunal-labs.github.io/my_resume/`**
 
 ---
 

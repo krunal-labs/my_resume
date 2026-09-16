@@ -285,6 +285,10 @@ img {
   list-style: none;
 }
 
+.mobile-resume-item {
+  display: none;
+}
+
 .nav-link {
   font-size: 0.9375rem;
   font-weight: 500;

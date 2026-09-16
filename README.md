@@ -46,7 +46,8 @@ ResumeWebsite/
 │   ├── js/
 │   │   └── main.js         # Theme toggle, metrics counters, filtering & scroll-spy
 │   └── images/
-│       ├── krunalgeek.jpg  # Profile portrait
+│       ├── profile.jpg     # Profile portrait
 │       └── favicon.svg     # Monogram branding icon
-└── personal_data/          # Original resume source files (PDF & DOCX)
+└── resume/
+    └── Krunal_Panchal_Resume.pdf  # ATS-friendly PDF resume
 ```

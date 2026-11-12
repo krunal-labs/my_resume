@@ -215,7 +215,7 @@ function initMessageDrafter() {
   const sendLinkedinBtn = document.getElementById('send-linkedin-btn');
 
   const messageTemplates = {
-    role: "Hi Krunal, I came across your impressive profile and track record in Android SDK architecture and mobile engineering (>99.9% crash-free across 10M+ sessions). We are currently looking for a Lead Mobile Engineer to lead mobile initiatives at our company. Would you be open to an introductory discussion?",
+    role: "Hi Krunal, I came across your impressive profile and track record in Android SDK architecture and mobile engineering (>90% crash-free across 10M+ sessions). We are currently looking for a Lead Mobile Engineer to lead mobile initiatives at our company. Would you be open to an introductory discussion?",
     consulting: "Hi Krunal, I was reviewing your experience in building high-concurrency mobile architectures, BLE integrations, and KMM SDKs. We have an upcoming mobile architecture challenge and would love to consult with you. Let's connect!",
     quick: "Hi Krunal, I'm reaching out after seeing your portfolio and 250+ launched production apps. I'd love to connect on LinkedIn and stay in touch regarding engineering opportunities."
   };

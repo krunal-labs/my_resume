@@ -6,7 +6,7 @@
   <style>
     @page {
       size: letter;
-      margin: 0.38in 0.45in 0.38in 0.45in;
+      margin: 0.42in 0.5in 0.42in 0.5in;
     }
     
     * {
@@ -16,11 +16,11 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #111827;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #1f2937;
       background: #ffffff;
-      font-size: 8.5pt;
-      line-height: 1.3;
+      font-size: 8.4pt;
+      line-height: 1.28;
     }
 
     /* Header */
@@ -28,23 +28,22 @@
       text-align: center;
       margin-bottom: 7pt;
       padding-bottom: 5pt;
-      border-bottom: 1.5pt solid #111827;
     }
 
     .name {
       font-size: 17pt;
-      font-weight: bold;
-      letter-spacing: 0.03em;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #0f172a;
+      color: #1e3a8a;
       margin-bottom: 2pt;
     }
 
     .title {
       font-size: 10pt;
-      font-weight: bold;
-      color: #059669;
-      margin-bottom: 3pt;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 4pt;
     }
 
     .contact-info {
@@ -54,12 +53,12 @@
 
     .contact-info a {
       color: #1d4ed8;
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     .contact-sep {
       margin-inline: 4pt;
-      color: #9ca3af;
+      color: #6b7280;
     }
 
     /* Section Styling */
@@ -68,22 +67,22 @@
     }
 
     .section-title {
-      font-size: 9.5pt;
-      font-weight: bold;
+      font-size: 9.2pt;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #0f172a;
-      border-bottom: 1pt solid #cbd5e1;
-      padding-bottom: 2pt;
-      margin-bottom: 4pt;
+      color: #1e3a8a;
+      border-bottom: 1.2pt solid #1e3a8a;
+      padding-bottom: 1.5pt;
+      margin-bottom: 3.5pt;
     }
 
     /* Summary */
     .summary-text {
       text-align: justify;
-      color: #334155;
-      font-size: 8.4pt;
-      line-height: 1.3;
+      color: #1f2937;
+      font-size: 8.3pt;
+      line-height: 1.28;
     }
 
     /* Skills Grid */
@@ -94,19 +93,20 @@
     .skills-list li {
       margin-bottom: 2pt;
       font-size: 8.2pt;
-      color: #334155;
+      color: #1f2937;
       line-height: 1.25;
+      padding-left: 10pt;
+      text-indent: -10pt;
     }
 
     .skill-category {
-      font-weight: bold;
-      color: #0f172a;
+      font-weight: 700;
+      color: #111827;
     }
 
     /* Experience */
     .job-block {
       margin-bottom: 5.5pt;
-      page-break-inside: avoid;
     }
 
     .job-header {
@@ -117,100 +117,83 @@
     }
 
     .company-name {
-      font-size: 9pt;
-      font-weight: bold;
-      color: #0f172a;
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: #1e3a8a;
     }
 
     .job-date {
       font-size: 8.2pt;
-      font-weight: bold;
-      color: #475569;
+      font-weight: 700;
+      color: #111827;
     }
 
     .job-role {
-      font-size: 8.4pt;
+      font-size: 8.3pt;
       font-style: italic;
-      color: #059669;
+      color: #374151;
       margin-bottom: 2pt;
     }
 
     .job-bullets {
-      margin-left: 13pt;
+      margin-left: 14pt;
       margin-bottom: 2pt;
     }
 
     .job-bullets li {
-      font-size: 8.2pt;
-      color: #334155;
+      font-size: 8.1pt;
+      color: #1f2937;
       margin-bottom: 1.5pt;
-      line-height: 1.25;
+      line-height: 1.23;
     }
 
-    .client-callout {
-      margin-left: 13pt;
-      font-size: 8pt;
-      color: #475569;
-      margin-top: 1.5pt;
-      margin-bottom: 1.5pt;
+    /* Notable Projects */
+    .projects-list {
+      list-style: none;
     }
 
-    .client-callout strong {
-      color: #0f172a;
-    }
-
-    /* Projects */
-    .project-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 10pt;
-      row-gap: 3pt;
-    }
-
-    .project-item {
-      font-size: 8pt;
-      color: #334155;
-      line-height: 1.22;
-      page-break-inside: avoid;
+    .projects-list li {
+      font-size: 8.1pt;
+      color: #1f2937;
       margin-bottom: 2pt;
+      line-height: 1.23;
+      padding-left: 10pt;
+      text-indent: -10pt;
     }
 
     .project-name {
-      font-weight: bold;
-      color: #0f172a;
+      font-weight: 700;
+      color: #111827;
     }
 
-    .project-meta {
-      color: #059669;
-      font-weight: 600;
-      font-size: 7.8pt;
+    .projects-list a {
+      color: #1d4ed8;
+      text-decoration: underline;
     }
 
-    /* Education & Certifications */
-    .two-column-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 16pt;
+    /* Certifications & Education */
+    .cert-list, .edu-list {
+      list-style: none;
     }
 
-    .column-half {
-      flex: 1;
+    .cert-list li, .edu-list li {
+      font-size: 8.2pt;
+      color: #1f2937;
+      margin-bottom: 2pt;
+      line-height: 1.25;
+      padding-left: 10pt;
+      text-indent: -10pt;
     }
 
-    .cert-item, .edu-item {
-      margin-bottom: 3pt;
-      font-size: 8.5pt;
-      color: #334155;
+    .bullet-bold {
+      font-weight: 700;
+      color: #111827;
     }
 
-    .cert-title, .edu-degree {
-      font-weight: bold;
-      color: #0f172a;
-    }
-
-    .cert-meta, .edu-meta {
-      font-size: 8pt;
-      color: #64748b;
+    /* Page break helpers for clean PDF export */
+    .page-break {
+      page-break-before: always;
+      break-before: page;
     }
   </style>
 </head>
@@ -218,45 +201,46 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="name">Krunal Panchal</div>
+    <div class="name">KRUNAL PANCHAL</div>
     <div class="title">Lead Mobile Engineer</div>
     <div class="contact-info">
       <span>Gujarat, India</span>
       <span class="contact-sep">|</span>
-      <span>LinkedIn: <a href="https://linkedin.com/in/krunalmobile">linkedin.com/in/krunalmobile</a></span>
+      <span>LinkedIn: <a href="https://linkedin.com/in/krunalmobile" target="_blank" rel="noopener noreferrer">linkedin.com/in/krunalmobile</a></span>
       <span class="contact-sep">|</span>
-      <span>GitHub: <a href="https://github.com/krunal-labs">github.com/krunal-labs</a></span>
+      <span>GitHub: <a href="https://github.com/krunal-labs" target="_blank" rel="noopener noreferrer">krunal-labs</a></span>
       <span class="contact-sep">|</span>
-      <span>Portfolio: <a href="https://krunal-labs.github.io">krunal-labs.github.io</a></span>
+      <span>Portfolio: <a href="https://krunal-labs.github.io" target="_blank" rel="noopener noreferrer">krunal-labs.github.io</a></span>
     </div>
   </header>
 
   <!-- Summary -->
   <section class="section">
-    <div class="section-title">Summary</div>
+    <div class="section-title">SUMMARY</div>
     <p class="summary-text">
-      Lead Mobile Engineer with 11+ years architecting and shipping scalable Android, iOS, and cross-platform applications across 5+ countries, including 5+ years in technical lead roles directing distributed engineering teams. Proven record directing end-to-end product lifecycles, having launched 250+ applications from MVP design through production deployment, maintaining &gt;99.9% crash-free session rates across multi-million user bases. Driven by a pragmatic engineering philosophy: building clean, maintainable architecture (MVI, MVVM, Clean Architecture) that eliminates unnecessary complexity while ensuring long-term maintainability. Experienced technical lead adept at owning architectural decisions, running sprint planning and estimation, conducting code reviews, and mentoring engineers, with a track record of translating business requirements into architectural documentation and technical roadmaps. Full-stack proficient with Python, Node/JS, and REST/GraphQL APIs, enabling robust API contract design, CI/CD build automation, and engineering leadership across distributed teams.
+      Lead Mobile Engineer with 11+ years architecting and shipping scalable Android, iOS, and cross-platform applications across 5+ countries, including 5+ years in technical lead roles directing distributed engineering teams. Proven record directing end-to-end product lifecycles, having launched 250+ applications from MVP design through production deployment, maintaining &gt;90% crash-free session rates across multi-million user bases. Driven by a pragmatic engineering philosophy: building clean, maintainable architecture (MVI, MVVM, Clean Architecture) that eliminates unnecessary complexity while ensuring long-term maintainability. Experienced technical lead adept at owning architectural decisions, running sprint planning and estimation, conducting code reviews, and mentoring engineers, with a track record of translating business requirements into architectural documentation and technical roadmaps. Full-stack proficient with Python, Node/JS, and REST/GraphQL APIs, enabling robust API contract design, CI/CD build automation, and engineering leadership across distributed teams.
     </p>
   </section>
 
   <!-- Technical Skills -->
   <section class="section">
-    <div class="section-title">Technical Skills</div>
+    <div class="section-title">TECHNICAL SKILLS</div>
     <ul class="skills-list">
-      <li><span class="skill-category">• Languages &amp; Platforms:</span> Android SDK, iOS, Kotlin, Java, Swift, Dart, Python, JavaScript/TypeScript</li>
-      <li><span class="skill-category">• Cross-Platform &amp; SDKs:</span> Kotlin Multiplatform (KMM), Flutter, React Native, Mobile SDK Architecture &amp; Publishing</li>
-      <li><span class="skill-category">• Architecture &amp; Patterns:</span> Clean Architecture, MVI, MVVM, Repository Pattern, BLoC, Offline-First, State Management, Dependency Injection (Hilt, Dagger, Koin)</li>
-      <li><span class="skill-category">• Android/iOS Toolkit:</span> Jetpack Compose UI, SwiftUI, Kotlin Coroutines, Flow, RxJava, Room Database, SQLite, Android Studio, Xcode, Fastlane, Jenkins, CI/CD, Git</li>
-      <li><span class="skill-category">• Connectivity &amp; Hardware:</span> Bluetooth/BLE, GATT Profiles, USB, UART, MODBUS, WebSocket, MQTT, WebRTC, RESTful APIs, GraphQL</li>
-      <li><span class="skill-category">• Maps, Location &amp; AR:</span> Mapbox Routing, Google Maps, Here Maps, Indoor Navigation, Geofencing, ARCore (Augmented Reality), 360° Immersive Media, Wearables</li>
-      <li><span class="skill-category">• Backend &amp; Cloud:</span> Firebase (Auth, Realtime DB, Firestore, Crashlytics, Analytics), Push Notifications (FCM), Payment Gateways (Stripe, PayPal, Razorpay), In-App Billing</li>
-      <li><span class="skill-category">• Quality &amp; Profiling:</span> Unit Testing (JUnit, Mockito), Espresso UI Tests, Memory Profiling (LeakCanary), ANR Bottleneck Resolution, Sentry Telemetry, Performance Optimization</li>
+      <li><span class="skill-category">• Languages &amp; Platforms:</span> Android, iOS, Kotlin, Java, Swift, Dart, Python, JavaScript/TypeScript</li>
+      <li><span class="skill-category">• Cross-Platform:</span> Flutter, React Native, Kotlin Multiplatform (KMM)</li>
+      <li><span class="skill-category">• Architecture &amp; Patterns:</span> MVVM, MVI, Clean Architecture, Repository Pattern, BLOC, Offline-First, State Management, Dependency Injection</li>
+      <li><span class="skill-category">• Android/iOS Toolkit:</span> Jetpack Compose UI, SwiftUI, RxJava, Kotlin Coroutines, Android SDK, SQLite, Room, Android Studio, XCode, Fastlane, Jenkins, CI/CD, Git</li>
+      <li><span class="skill-category">• Connectivity &amp; Hardware:</span> Bluetooth/BLE, GATT, USB, UART, MODBUS, WebSocket, MQTT, WebRTC, RESTful APIs, GraphQL</li>
+      <li><span class="skill-category">• Maps &amp; Location:</span> Google Maps, Here Maps, Mapbox, Geofencing, Location Services, Indoor Navigation, Wearables</li>
+      <li><span class="skill-category">• Media &amp; AR:</span> Augmented Reality (ARCore), 360° Immersive Media, Media Playback, Audio/Video Calling (Agora, Twilio, WebRTC)</li>
+      <li><span class="skill-category">• Backend &amp; Cloud:</span> Firebase (Auth, Realtime DB, Firestore, Crashlytics, Analytics), Push Notifications, Payment Gateways (Stripe, PayPal, Razorpay), Billing/Subscriptions</li>
+      <li><span class="skill-category">• Quality &amp; Practices:</span> Unit Testing (JUnit/Espresso), Profiling, LeakCanary, Sentry, Performance Optimization, SDK Architecture &amp; Publishing, Localization, RTL/Dark-Light UI, Technical Leadership, AI-Assisted Development</li>
     </ul>
   </section>
 
   <!-- Work Experience -->
   <section class="section">
-    <div class="section-title">Work Experience</div>
+    <div class="section-title">WORK EXPERIENCE</div>
 
     <!-- Deceauratio -->
     <div class="job-block">
@@ -267,7 +251,7 @@
       <div class="job-role">Lead Mobile Engineer — Technical Consultant — Android, iOS, TechOps</div>
       <ul class="job-bullets">
         <li>Directed dual-platform mobile delivery and Unity integration, managing end-to-end release cycles on Google Play and Apple App Store while embedding and testing complex Unity runtime exports within native Android and iOS containers.</li>
-        <li>Slashed monthly infrastructure and operational expenses by <strong>78%</strong> by re-architecting server hosting and migrating from paid platforms to cost-effective Git workflows according to user acquisition and active users on app.</li>
+        <li>Slashed monthly infrastructure and operational expenses by 78% by re-architecting server hosting and migrating from paid platforms to cost-effective Git workflows according to user acquisition and active users on app.</li>
         <li>Orchestrated end-to-end server migration and CMS management via SSH, configuring Linux environments for the core Laravel Node, CMS, provisioning SSL/TLS certificates, managing DNS/CNAME routing, and maintaining backend features using AI-assisted and custom code workflows and final deployment.</li>
       </ul>
     </div>
@@ -278,12 +262,15 @@
         <span class="company-name">Mapsted Inc. (Canada – Remote)</span>
         <span class="job-date">Jul 2024 – Apr 2026</span>
       </div>
-      <div class="job-role">Senior Android Developer — Maps SDK, Android, Kotlin Multiplatform (KMM), iOS</div>
+      <div class="job-role">Lead Mobile Engineer — Maps SDK, Android, Kotlin Multiplatform (KMM), iOS</div>
       <ul class="job-bullets">
-        <li>Maintained a <strong>99.9% crash-free session rate across 10M+ user sessions</strong> by profiling memory allocations, resolving critical memory leaks via LeakCanary, and eliminating Application Not Responding (ANR) bottlenecks.</li>
-        <li>Architected modular SDK components across <strong>25+ modules</strong> for scalable third-party enterprise integrations, including building 1 greenfield <strong>Kotlin Multiplatform (KMM)</strong> indoor navigation SDK from scratch.</li>
-        <li>Optimized vector map rendering performance by <strong>55%</strong> and reduced memory footprint for dense indoor venue datasets by <strong>60%</strong>.</li>
-        <li>Implemented a request-collapsing pattern improving concurrent request efficiency by <strong>80%</strong>, and refined multi-tier cache hierarchies to cut redundant network calls by <strong>60%</strong>.</li>
+        <li>Maintained a 90% crash-free session rate across 10M+ user sessions by profiling memory allocations, resolving critical memory leaks via LeakCanary, and eliminating Application Not Responding (ANR) bottlenecks.</li>
+        <li>Architected modular SDK components across 25+ modules for scalable third-party enterprise integrations, including building 1 greenfield Kotlin Multiplatform (KMM) indoor navigation SDK from scratch.</li>
+        <li>Optimized vector map rendering performance by 55% and reduced memory footprint for dense indoor venue datasets by 60%.</li>
+        <li>Implemented a request-collapsing pattern improving concurrent request efficiency by 80%, and refined multi-tier cache hierarchies to cut redundant network calls by 60%.</li>
+      </ul>
+      <div class="page-break"></div>
+      <ul class="job-bullets" style="margin-top: 4pt;">
         <li>Built automated Python CI/CD scripts for continuous integration, automated artifact packaging, semantic versioning, and distribution verification.</li>
         <li>Authored comprehensive technical architecture documentation, led sprint estimations, enforced rigorous code review standards, and mentored 4 developers within a 100+ distributed engineering team.</li>
         <li>Acted as technical lead for the Android/KMM workstream, owning architectural decisions, setting coding standards, and running design reviews to align implementation with cross-platform SDK roadmap goals.</li>
@@ -299,9 +286,9 @@
       </div>
       <div class="job-role">Senior Android Developer — Android, iOS, Flutter, React Native</div>
       <ul class="job-bullets">
-        <li>Led mobile architecture and end-to-end delivery for <strong>10+ production applications</strong> across US and EU markets, sustaining &gt;99.8% crash-free rates across 50,000+ active users.</li>
+        <li>Led mobile architecture and end-to-end delivery for 10+ production applications across US and EU markets, sustaining &gt;99.8% crash-free rates across 50,000+ active users.</li>
         <li>Refactored legacy codebases into modular Clean Architecture (MVI/MVVM/BLoC), reducing regression defects by 30% and accelerating feature delivery cycles by 35%.</li>
-        <li>Achieved <strong>80%+ unit test coverage</strong> on core business logic using JUnit and Mockito, integrating automated Espresso UI testing suites to safeguard production releases.</li>
+        <li>Achieved 80%+ unit test coverage on core business logic using JUnit and Mockito, integrating automated Espresso UI testing suites to safeguard production releases.</li>
         <li>Configured telemetry and analytics pipelines using Firebase Remote Config, Crashlytics, and custom event schemas for structured A/B testing to guide product iterations.</li>
         <li>Served as primary technical lead and client liaison, translating product specifications into clear engineering documentation, technical roadmaps, and delivery estimates while mentoring 3+ engineers.</li>
         <li>Dedicated Senior Android Developer for Utility NYC, USA — directed native Android engineering for high-impact US clients, delivering Mount Sinai Parenting Centre, MindFitness, and GIA Diamonds apps with zero-defect releases.</li>
@@ -319,7 +306,7 @@
       </div>
       <div class="job-role">Senior Android Developer — Android, iOS, Flutter, Hardware &amp; BLE</div>
       <ul class="job-bullets">
-        <li>Engineered hardware-connected Android applications interfacing with external BLE/GATT devices, managing concurrent real-time data sync across <strong>25+ peripheral sensors</strong>.</li>
+        <li>Engineered hardware-connected Android applications interfacing with external BLE/GATT devices, managing concurrent real-time data sync across 25+ peripheral sensors.</li>
         <li>Architected fault-tolerant background services, connection-retry state machines, and local Room/SQLite persistence pipelines for automated daily diagnostic reporting.</li>
         <li>Optimized location tracking algorithms for low battery consumption and uninterrupted, long-running hardware deployments.</li>
         <li>Served as technical lead for the hardware-integration team, owning sprint estimation, task delegation, and code review for BLE/GATT connectivity modules across the product line.</li>
@@ -353,7 +340,8 @@
     </div>
 
     <!-- Treewind Infotech -->
-    <div class="job-block">
+    <div class="page-break"></div>
+    <div class="job-block" style="margin-top: 4pt;">
       <div class="job-header">
         <span class="company-name">Treewind Infotech (India)</span>
         <span class="job-date">Jul 2014 – Oct 2016</span>
@@ -367,68 +355,43 @@
 
   <!-- Notable Projects -->
   <section class="section">
-    <div class="section-title">Notable Production Projects</div>
-    <div class="project-grid">
-      <div class="project-item">
-        <span class="project-name">• Joom:</span> Global e-commerce app <span class="project-meta">(100M+ Downloads, 4.5★)</span> with high-concurrency feeds, modular architecture, and localized payments.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• LightInTheBox:</span> International retail app <span class="project-meta">(10M+ Downloads)</span> featuring dynamic product catalogs, multi-currency checkout, and deep-link routing.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Tiqets:</span> Worldwide ticketing platform <span class="project-meta">(1M+ Downloads, 4.7★)</span> with interactive venue maps, offline passes, and integrated gateways.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Home Centre &amp; Splash Fashions:</span> Landmark Group flagship apps <span class="project-meta">(1M+ Downloads each)</span> with omnichannel search and loyalty SDK.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Map Marker:</span> Spatial location management app <span class="project-meta">(1M+ Downloads, 4.6★)</span> with custom GPS tracking, polygon clustering, and offline GIS.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Flowtime:</span> Real-time biosensing app integrated with EEG headband hardware over low-latency Bluetooth BLE/GATT protocols.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Beyond Budget:</span> Offline-first personal finance tracker <span class="project-meta">(100k+ Downloads, 4.6★)</span> with reactive Room caching and budgeting charts.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Kompaio:</span> Interactive city tour app featuring Mapbox routing, dynamic CMS updates, and ARCore 360° historical views across Europe.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Mapsted Locate &amp; Sandbox:</span> Enterprise indoor positioning and IoT asset tracking client applications built on proprietary indoor positioning SDKs.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Sinar MLog:</span> Industrial BLE data collection application executing concurrent real-time sync across 15+ agricultural hardware sensors.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• CampusGo &amp; Sheridan CampusWay:</span> Precision campus navigation and wayfinding deployments for University of Windsor and Sheridan College.
-      </div>
-      <div class="project-item">
-        <span class="project-name">• Mount Sinai Daily:</span> Healthcare employee communications app keeping hospital personnel informed and connected (SocialChorus/Firstup).
-      </div>
-    </div>
+    <div class="section-title">NOTABLE PROJECTS</div>
+    <ul class="projects-list">
+      <li>• <span class="project-name">Joom — Online Shopping</span> — Global e-commerce application (100M+ downloads, 4.5★) featuring high-concurrency feeds, modular architecture, and localized checkout flows. (<a href="https://play.google.com/store/apps/details?id=com.joom" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">LightInTheBox — Global Shopping</span> — High-volume international retail app (10M+ downloads) featuring dynamic product catalogs, multi-currency payments, and deep-link routing. (<a href="https://play.google.com/store/apps/details?id=com.lightinthebox.android" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Tiqets — Culture &amp; Entertainment</span> — Worldwide attraction booking platform (1M+ downloads, 4.7★) with dynamic venue maps, offline ticket access, and integrated payment gateways. (<a href="https://play.google.com/store/apps/details?id=com.tiqets.tiqetsapp" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Home Centre &amp; Splash Fashions</span> — Flagship retail applications for Landmark Group (1M+ downloads each) with omnichannel inventory search, loyalty programs, and secure checkout. (<a href="https://play.google.com/store/apps/details?id=com.landmarkgroup.homecentrestores" target="_blank" rel="noopener noreferrer">Home Centre</a>) (<a href="https://play.google.com/store/apps/details?id=com.landmarkgroup.splashfashions" target="_blank" rel="noopener noreferrer">Splash Fashions</a>)</li>
+      <li>• <span class="project-name">Map Marker</span> — Spatial location management app (1M+ downloads, 4.6★) featuring custom GPS waypoint tracking, spatial polygon clustering, and offline map overlays. (<a href="https://play.google.com/store/apps/details?id=com.exlyo.mapmarker" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Beyond Budget — Expense Tracker</span> — Offline-first personal finance tracker (100k+ downloads, 4.6★) built with reactive Room database caching and financial visualization. (<a href="https://play.google.com/store/apps/details?id=com.beyondbudget" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">GetLead CRM</span> — Mobile sales and lead management CRM with automated lead routing, call activity logging, and real-time cloud synchronization. (<a href="https://play.google.com/store/apps/details?id=com.getlead.app" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Tooth Tycoon</span> — Interactive gamified pediatric dental health tracker with custom state-driven animations and local data persistence. (<a href="https://play.google.com/store/apps/details?id=za.co.outsourced.toothtycoonapp" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Madhvi</span> — Community media and content delivery platform with real-time push messaging and media streaming. (<a href="https://play.google.com/store/apps/details?id=com.madhvi.madhviapp" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Kompaio — Maps &amp; 3D Navigation</span> — Interactive city tour application featuring Mapbox routing, dynamic CMS updates, and ARCore 360° historical views. (<a href="https://play.google.com/store/apps/details?id=com.kompaio.app" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Sinar MLog — BLE Data Collection</span> — Industrial BLE application executing concurrent real-time sync across 15+ agricultural hardware sensors. (<a href="https://play.google.com/store/apps/details?id=com.sinarmlog.app" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Mapsted Locate &amp; Sandbox</span> — Enterprise indoor positioning and IoT asset tracking client applications built on proprietary indoor positioning SDKs. (<a href="https://play.google.com/store/apps/details?id=com.mapsted.locate" target="_blank" rel="noopener noreferrer">Locate</a>) (<a href="https://play.google.com/store/apps/details?id=com.mapsted.demo" target="_blank" rel="noopener noreferrer">Sandbox</a>)</li>
+      <li>• <span class="project-name">Family Table — Family Social App</span> — Group and 1:1 chat app for families, with photo/video sharing and member invites. (<a href="https://play.google.com/store/apps/details?id=com.app.familytable" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">CampusGo — University Wayfinding</span> — Indoor navigation app for the University of Windsor with precise wayfinding, an interactive campus directory, and a personalized event/news feed. (<a href="https://play.google.com/store/apps/details?id=com.mapsted.campusgo" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Sheridan CampusWay — Campus Wayfinding</span> — Custom indoor navigation deployment built on the Mapsted Maps SDK for Sheridan College. (<a href="https://play.google.com/store/apps/details?id=com.mapsted.sheridancampusway" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+      <li>• <span class="project-name">Mount Sinai Daily — Employee Communications App</span> — Internal community app keeping Mount Sinai staff informed and connected, built on the SocialChorus/Firstup platform. (<a href="https://play.google.com/store/apps/details?id=com.socialchorus.ihai.android.googleplay" target="_blank" rel="noopener noreferrer">Play Store</a>)</li>
+    </ul>
   </section>
 
-  <!-- Certifications & Education -->
+  <!-- Certifications -->
   <section class="section">
-    <div class="section-title">Certifications &amp; Education</div>
-    <div class="two-column-row">
-      <div class="column-half">
-        <div class="cert-item">
-          <div class="cert-title">• Kotlin Professional — Top 5% Global Percentile</div>
-          <div class="cert-meta">Pro5.ai &bull; Credential ID: #29672855681 &bull; June 2024</div>
-        </div>
-      </div>
-      <div class="column-half">
-        <div class="edu-item">
-          <div class="edu-degree">• Diploma in Computer Engineering</div>
-          <div class="edu-meta">Gujarat Technological University, Gujarat, India (2011–2014)</div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-degree">• H.S.C. (Science) &amp; S.S.C.</div>
-          <div class="edu-meta">S.P. Vidhyalaya, Gujarat, India (2011, 2009)</div>
-        </div>
-      </div>
-    </div>
+    <div class="section-title">CERTIFICATIONS</div>
+    <ul class="cert-list">
+      <li>• <span class="bullet-bold">Kotlin Professional, Top 5%</span> — Pro5.ai (Cert. #29672855681), June 2024</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <div class="section-title">EDUCATION</div>
+    <ul class="edu-list">
+      <li>• <span class="bullet-bold">Diploma in Computer Engineering</span> — Gujarat Technological University, Gujarat, India (2011–2014)</li>
+      <li>• <span class="bullet-bold">H.S.C. (Science)</span> — S.P. Vidhyalaya, Gujarat, India (2011)</li>
+      <li>• <span class="bullet-bold">S.S.C.</span> — S.P. Vidyalaya, Gujarat, India (2009)</li>
+    </ul>
   </section>
 
 </body>
